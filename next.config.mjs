@@ -19,21 +19,18 @@ const config = {
       },
     ],
   },
-  // 使用 rewrite 而非 redirect，避免额外的网络往返
-  async rewrites() {
+    async redirects() {
     return [
       {
         source: '/tradingview',
-        destination: '/tradingview/index.html',
+        destination: 'https://peng.zifan.blog',
+        permanent: true,
       },
       {
         source: '/tradingview/',
-        destination: '/tradingview/index.html',
+        destination: 'https://peng.zifan.blog',
+        permanent: true,
       },
-    ];
-  },
-  async redirects() {
-    return [
       {
         source:
           '/docs/al-brooks-trends/12-Chapter_2__Trend_Bars,_Doji_Bars,_and_Climaxes',

@@ -17,7 +17,7 @@ const courses = [
   {
     title: 'TradingView',
     description: '私人定制项目，内部用户专享。',
-    href: '/tradingview',
+    href: 'https://peng.zifan.blog',
     tag: '项目',
     icon: (
       <svg className="w-5 h-5 md:w-6 md:h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
